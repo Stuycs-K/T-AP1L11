@@ -17,6 +17,7 @@ public class Game{
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
     //YOUR CODE HERE
     /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    
   }
 
   //Display a line of text starting at
@@ -131,6 +132,7 @@ public class Game{
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
     //YOUR CODE HERE
     /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    enemies.add(new CodeWarrior());
 
     //Adventurers you control:
     //Make an ArrayList of Adventurers and add 2-4 Adventurers to it.
@@ -138,7 +140,8 @@ public class Game{
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
     //YOUR CODE HERE
     /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
+    party.add(new CodeWarrior());
+    
     boolean partyTurn = true;
     int whichPlayer = 0;
     int whichOpponent = 0;
