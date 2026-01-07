@@ -30,23 +30,25 @@ public abstract class Adventurer{
   all adventurers must have a way to attack enemies and
   support their allys
   */
-  //hurt or hinder the target adventurer
-  public abstract String attack(Adventurer other);
 
-  /*This is an example of an improvement that you can make to allow
-   * for more flexible targetting.
-   */
-  //heal or buff the party
-  //public abstract String support(ArrayList<Adventurer> others);
+
+  /*
+  *These methods have been modified! You can pass in all of the enemies and the index of which enemy to target. 
+  *This will give flexibility and allow you to target more than one Adventuer, or all Adventuers with the same method
+  */
+  
+  
+  //hurt or hinder the target adventurer
+  public abstract String attack(ArrayList<Adventurer> others, int index);
 
   //heal or buff the target adventurer
-  public abstract String support(Adventurer other);
+  public abstract String support(ArrayList<Adventurer> others, int index);
 
   //heal or buff self
   public abstract String support();
 
   //hurt or hinder the target adventurer, consume some special resource
-  public abstract String specialAttack(Adventurer other);
+  public abstract String specialAttack(ArrayList<Adventurer> others, int index);
 
   /*
   standard methods
