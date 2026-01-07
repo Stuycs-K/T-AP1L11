@@ -64,7 +64,7 @@ public class CodeWarrior extends Adventurer{
       " skills to hack the matrix. "+
       " This glitched out "+other+" dealing "+ damage +" points of damage.";
     }else{
-      return "Not enough caffeine to use the ultimate code. Instead "+attack(other);
+      return "Not enough caffeine to use the ultimate code. Instead "+attack(others,index);
     }
 
   }
