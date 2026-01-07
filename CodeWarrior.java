@@ -41,7 +41,8 @@ public class CodeWarrior extends Adventurer{
   }
 
   /*Deal 2-7 damage to opponent, restores 2 caffeine*/
-  public String attack(Adventurer other){
+  public String attack(ArrayList<Adventurer> others,int index){
+    Adventurer other = others.get(index);
     int damage = (int)(Math.random()*6)+2;
     other.applyDamage(damage);
     restoreSpecial(2);
@@ -52,7 +53,8 @@ public class CodeWarrior extends Adventurer{
   /*Deal 3-12 damage to opponent, only if caffeine is high enough.
   *Reduces caffeine by 8.
   */
-  public String specialAttack(Adventurer other){
+  public String specialAttack(ArrayList<Adventurer> others,int index){
+    Adventurer other = others.get(index);
     if(getSpecial() >= 8){
       setSpecial(getSpecial()-8);
       int damage = (int)(Math.random()*5+Math.random()*5)+3;
@@ -66,7 +68,8 @@ public class CodeWarrior extends Adventurer{
 
   }
   /*Restores 5 special to other*/
-  public String support(Adventurer other){
+  public String support(ArrayList<Adventurer> others,int index){
+    Adventurer other = others.get(index);
     return "Gives a coffee to "+other+" and restores "
     + other.restoreSpecial(5)+" "+other.getSpecialName();
   }
