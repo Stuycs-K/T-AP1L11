@@ -234,7 +234,7 @@ public class Game{
       }
 
       //display the updated screen after input has been processed.
-      drawScreen();
+      drawScreen(enemies,party);
 
 
     }//end of main game loop
