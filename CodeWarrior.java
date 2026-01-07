@@ -1,3 +1,4 @@
+import java.util.*;
 public class CodeWarrior extends Adventurer{
   int caffeine, caffeineMax;
   String preferredLanguage;
