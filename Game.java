@@ -17,7 +17,7 @@ public class Game{
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
     //YOUR CODE HERE
     /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-    
+    Text.clear();
   }
 
   //Display a line of text starting at
@@ -121,7 +121,7 @@ public class Game{
   public static void run(){
     //Clear and initialize
     Text.hideCursor();
-    Text.clear();
+    
 
 
     //Things to attack:
